@@ -411,8 +411,14 @@ mumble('121'); //=> '1-22-111'
 mumble('!A 2'); //=> '!-AA-   -2222'
 -----------------------------------------------------------------*/
 // Your solution for 13-mumble here:
-
-
+function mumble(str) {
+  var result = '';
+  for (var i = 0; i < str.length; i++) {
+    // the ((i || '') && '-') only adds a dash if it's not the first iteration
+    result += ((i || '') && '-') + str.charAt(i).repeat(i + 1);
+  }
+  return result;
+}
 
 
 
