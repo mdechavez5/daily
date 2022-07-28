@@ -947,7 +947,9 @@ countTheBits( 255 ) //=> 8
 countTheBits( 65535 )  //=> 16
 -----------------------------------------------------------------*/
 // Your solution for 27-countTheBits here:
-
+function countTheBits(int) {
+  return int.toString(2).split('').filter(bit => bit === '1').length;
+}
 
 
 
