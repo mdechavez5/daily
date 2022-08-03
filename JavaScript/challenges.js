@@ -92,11 +92,20 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
-function sumNumbers(arr) {
-  let sum = 0;
-  for ( let i=0; i<arr.length; i++ ) {
-    sum += arr[i];
-  }
+// function sumNumbers(arr) {
+//   let sum = 0;
+//   for ( let i=0; i<arr.length; i++ ) {
+//     sum += arr[i];
+//   }
+//   return sum;
+// }
+
+/*--- better solution (use forEach unless you have to exit loop early) ---*/
+function sumNumbers(nums) {
+  var sum = 0;
+  nums.forEach(function(num) {
+    sum += num;
+  });
   return sum;
 }
 
