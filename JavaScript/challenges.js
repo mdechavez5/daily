@@ -101,12 +101,17 @@ sumNumbers([]) //=> 0
 // }
 
 /*--- better solution (use forEach unless you have to exit loop early) ---*/
+// function sumNumbers(nums) {
+//   var sum = 0;
+//   nums.forEach(function(num) {
+//     sum += num;
+//   });
+//   return sum;
+// }
+
+/*--- best solution (don't worry, this will make sense soon enough) ---*/
 function sumNumbers(nums) {
-  var sum = 0;
-  nums.forEach(function(num) {
-    sum += num;
-  });
-  return sum;
+  return nums.reduce((sum, num) => sum += num, 0);
 }
 
 // console.log(sumNumbers([10]));
