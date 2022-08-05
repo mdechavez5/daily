@@ -137,14 +137,25 @@ add(1,50,1.23) //=> 52.23
 add(7,-12) //=> -5
 -----------------------------------------------------------------*/
 // Your solution for 04-addList here:
+// function addList() {
+//   let sum = 0;
+//   //if(arguments == false) return 0;
+//   for (let i=0; i<arguments.length; i++){
+//     sum += arguments[i];
+//   }
+//   return sum;
+// }
+
+/*--- make arguments a true array then forEach ---*/
 function addList() {
-  let sum = 0;
-  //if(arguments == false) return 0;
-  for (let i=0; i<arguments.length; i++){
-    sum += arguments[i];
-  }
+  var nums = Array.from(arguments);
+  var sum = 0;
+  nums.forEach(function(num) {
+    sum += num;
+  });
   return sum;
 }
+
 // console.log(addList());
 // console.log(addList(1,50,1.23));
 // console.log(addList(7,-12));
