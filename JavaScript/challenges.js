@@ -147,13 +147,19 @@ add(7,-12) //=> -5
 // }
 
 /*--- make arguments a true array then forEach ---*/
-function addList() {
-  var nums = Array.from(arguments);
-  var sum = 0;
-  nums.forEach(function(num) {
-    sum += num;
-  });
-  return sum;
+// function addList() {
+//   var nums = Array.from(arguments);
+//   var sum = 0;
+//   nums.forEach(function(num) {
+//     sum += num;
+//   });
+//   return sum;
+// }
+
+/*--- use rest paramater syntax (ES2015) then reduce ---*/
+function addList(...nums) {
+  // nums will be an array containing all arguments 
+  return nums.reduce((sum, num) => sum + num, 0);
 }
 
 // console.log(addList());
