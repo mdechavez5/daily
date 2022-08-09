@@ -186,14 +186,21 @@ computeRemainder(4,0) //=> Infinity
 computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------*/
 // Your solution for 05-computeRemainder:
-function computeRemainder(a,b) {
-  let ans;
-  if (b == 0){
-    return Infinity;
-  } else {
-    return a/b;
-  }
+// function computeRemainder(a,b) {
+//   let ans;
+//   if (b == 0){
+//     return Infinity;
+//   } else {
+//     return a/b;
+//   }
+// }
+
+/*--- Using the modulus operator ---*/
+function computeRemainder(dividend, divisor) {
+  if (divisor === 0) return Infinity;
+  return dividend % divisor;
 }
+
 // console.log(computeRemainder(10,2));
 // console.log(computeRemainder(4,0));
 // console.log(computeRemainder(10.5,3));
