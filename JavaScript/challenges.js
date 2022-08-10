@@ -258,13 +258,21 @@ Examples:
 reverseUpcaseString("SEI Rocks!"); //=> "!SKCOR IES" 
 -----------------------------------------------------------------*/
 // Your solution for 07-reverseUpcaseString here:
+// function reverseUpcaseString(str) {
+//   let reverseStr = ""
+//   for ( let i = (str.length - 1); i >= 0; i-- ) {
+//     reverseStr += str.charAt(i);
+//   }
+//   return reverseStr.toUpperCase();
+// }
+
 function reverseUpcaseString(str) {
-  let reverseStr = ""
-  for ( let i = (str.length - 1); i >= 0; i-- ) {
-    reverseStr += str.charAt(i);
-  }
-  return reverseStr.toUpperCase();
+  // convert string to array, reverse, map and finally join it
+  return str.split('').reverse().map(function(char) {
+    return char.toUpperCase();
+  }).join('');
 }
+
 // console.log(reverseUpcaseString("SEI Rocks!"));
 
 
