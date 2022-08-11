@@ -266,11 +266,16 @@ reverseUpcaseString("SEI Rocks!"); //=> "!SKCOR IES"
 //   return reverseStr.toUpperCase();
 // }
 
+// function reverseUpcaseString(str) {
+//   // convert string to array, reverse, map and finally join it
+//   return str.split('').reverse().map(function(char) {
+//     return char.toUpperCase();
+//   }).join('');
+// }
+
 function reverseUpcaseString(str) {
-  // convert string to array, reverse, map and finally join it
-  return str.split('').reverse().map(function(char) {
-    return char.toUpperCase();
-  }).join('');
+  // above version using an arrow function
+  return str.split('').reverse().map(c => c.toUpperCase()).join('');
 }
 
 // console.log(reverseUpcaseString("SEI Rocks!"));
