@@ -298,17 +298,24 @@ removeEnds('SEI Rocks!'); //=> "EI Rocks"
 removeEnds('a'); //=> "" (empty string)
 -----------------------------------------------------------------*/
 // Your solution for 08-removeEnds here:
+// function removeEnds(str) {
+//   let strAns = "";
+//   if (str.length < 3) {
+//     return strAns;
+//   } else {
+//     for (let i=1; i<str.length-1; i++) {
+//       strAns += str.charAt(i);
+//     }
+//   }
+//   return strAns;
+// }
+
+/*--- Using substr String method ---*/
 function removeEnds(str) {
-  let strAns = "";
-  if (str.length < 3) {
-    return strAns;
-  } else {
-    for (let i=1; i<str.length-1; i++) {
-      strAns += str.charAt(i);
-    }
-  }
-  return strAns;
+  if (str.length < 3) return '';
+  return str.substr(1, str.length - 2);
 }
+
 console.log(removeEnds('SEI Rocks!'));
 console.log(removeEnds('a'));
 
