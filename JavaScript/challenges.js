@@ -385,14 +385,18 @@ formatWithPadding(42, '*', 10); //=> "********42"
 formatWithPadding(1234, '*', 3); //=> "1234"
 -----------------------------------------------------------------*/
 // Your solution for 10-formatWithPadding here:
-function formatWithPadding(int, char, length) {
-  var result = int.toFixed(0);
-  while (result.length < length) {
-    result = char + result;
-  }
-  return result;
-}
+// function formatWithPadding(int, char, length) {
+//   var result = int.toFixed(0);
+//   while (result.length < length) {
+//     result = char + result;
+//   }
+//   return result;
+// }
 
+/*--- Using the padStart String method ---*/
+function formatWithPadding(int, char, length) {
+  return int.toFixed(0).padStart(length, char);
+}
 
 
 /*-----------------------------------------------------------------
