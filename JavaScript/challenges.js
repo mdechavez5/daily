@@ -419,15 +419,26 @@ isPalindrome('A nut for a jar of tuna'); //=> true
 isPalindrome(''); //=> true
 -----------------------------------------------------------------*/
 // Your solution for 11-isPalindrome here:
+// function isPalindrome(str) {
+//   str = str.toLowerCase();
+//   // loop to replace spaces
+//   while (str.includes(' ')) str = str.replace(' ', '');
+//   for (var i = 0; i < Math.floor(str.length / 2); i++) {
+//     if (str.charAt(i) !== str.charAt(str.length - i - 1)) return false;
+//   }
+//   return true;
+// }
+
+/*--- Using regular expression to replace spaces ---*/
 function isPalindrome(str) {
-  str = str.toLowerCase();
-  // loop to replace spaces
-  while (str.includes(' ')) str = str.replace(' ', '');
+  // regular expression to replace all spaces
+  str = str.toLowerCase().replace(/ /g, '');
   for (var i = 0; i < Math.floor(str.length / 2); i++) {
     if (str.charAt(i) !== str.charAt(str.length - i - 1)) return false;
   }
   return true;
 }
+
 
 
 
