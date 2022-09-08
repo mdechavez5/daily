@@ -759,14 +759,18 @@ flatten( [1, [2, [3, [4]]], 1, 'a', ['b', 'c']] );
 // }
 
 /*--- Using recursion and inline ternary for conciseness ---*/
-function flatten(arr) {
-  var flatArr = [];
-  arr.forEach(function(elem) {
-    flatArr = flatArr.concat(Array.isArray(elem) ? flatten(elem): elem);
-  });
-  return flatArr;
-}
+// function flatten(arr) {
+//   var flatArr = [];
+//   arr.forEach(function(elem) {
+//     flatArr = flatArr.concat(Array.isArray(elem) ? flatten(elem): elem);
+//   });
+//   return flatArr;
+// }
 
+/*--- Use reduce and  recursion for a one-liner ---*/
+function flatten(arr) {
+  return arr.reduce((flatArr, elem) => flatArr.concat(Array.isArray(elem) ? flatten(elem): elem), []);
+}
 
 
 
