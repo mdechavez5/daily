@@ -829,34 +829,53 @@ primeFactors(105) //=> [3, 5, 7]
 primeFactors(200) //=> [2, 2, 2, 5, 5]
 -----------------------------------------------------------------*/
 // Your solution for 21-primeFactors here:
+// function primeFactors(n) {
+//   var factors = [];
+//   if (n < 2 || !Number.isInteger(n)) return factors;
+  
+//   // function to help find next prime to divide by...
+//   function isPrime(n) {
+//     if (n < 2 || !Number.isInteger(n)) return false;
+//     for (var i = 2; i <= n / 2; i++) {
+//       if (Number.isInteger(n / i)) return false;
+//     }
+//     return true;
+//   }
+  
+//   var prime = 2;  // start with smallest prime
+//   while (!isPrime(n)) {
+//     if (Number.isInteger(n / prime)) {
+//       factors.push(prime);
+//       n = n / prime;
+//     } else {
+//       // find next prime
+//       prime++;
+//       while (!isPrime(prime)) prime++;
+//     }
+//   }
+//   factors.push(n);
+//   return factors;
+// }
+
+/*-- a more efficient algorithm that relies on the fact
+     that you don't have to check if the divisor is prime 
+     as shown here:
+     https://people.revoledu.com/kardi/tutorial/BasicMath/Prime/Algorithm-PrimeFactor.html ---*/
 function primeFactors(n) {
   var factors = [];
   if (n < 2 || !Number.isInteger(n)) return factors;
-  
-  // function to help find next prime to divide by...
-  function isPrime(n) {
-    if (n < 2 || !Number.isInteger(n)) return false;
-    for (var i = 2; i <= n / 2; i++) {
-      if (Number.isInteger(n / i)) return false;
-    }
-    return true;
-  }
-  
-  var prime = 2;  // start with smallest prime
-  while (!isPrime(n)) {
-    if (Number.isInteger(n / prime)) {
-      factors.push(prime);
-      n = n / prime;
+  var divisor = 2;
+  while (n >= divisor * divisor) {
+    if (Number.isInteger(n / divisor)) {
+      factors.push(divisor);
+      n = n / divisor;
     } else {
-      // find next prime
-      prime++;
-      while (!isPrime(prime)) prime++;
+      divisor++;
     }
   }
   factors.push(n);
   return factors;
 }
-
 
 
 
