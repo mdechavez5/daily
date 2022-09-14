@@ -934,23 +934,35 @@ balancedBrackets( '[(])' ) // => false
 balancedBrackets( '[({}[])]' ) // => true
 -----------------------------------------------------------------*/
 // Your solution for 23-balancedBrackets here:
-function balancedBrackets(str) {
-  // can't be balanced if string odd in length
-  if (str.length % 2) return false;
-  var stack = [];
-  for (var i = 0; i < str.length; i++) {
-    var b = str.charAt(i);
-    if ( '([{'.includes(b) ) {
-      // add opening brackets to the stack
-      stack.push(b);
-    } else {
-      // not an opening bracket, so remove last opening and check if matched
-      if (!'() {} []'.includes(stack.pop() + b)) return false;
-    }
-  }
-  return true;
-}
+// function balancedBrackets(str) {
+//   // can't be balanced if string odd in length
+//   if (str.length % 2) return false;
+//   var stack = [];
+//   for (var i = 0; i < str.length; i++) {
+//     var b = str.charAt(i);
+//     if ( '([{'.includes(b) ) {
+//       // add opening brackets to the stack
+//       stack.push(b);
+//     } else {
+//       // not an opening bracket, so remove last opening and check if matched
+//       if (!'() {} []'.includes(stack.pop() + b)) return false;
+//     }
+//   }
+//   return true;
+// }
 
+/*--- Using Array.every method to iterate unless false is returned
+      Also using arrow function ---*/
+function balancedBrackets(str) {
+  var stack = [];
+  return str.split('').every(c => {
+    if ('([{'.includes(c)) {
+      return stack.push(c);
+    } else {
+      return '() {} []'.includes(stack.pop() + c)
+    }
+  });
+}
 
 
 
