@@ -1011,10 +1011,15 @@ isWinningTicket( [ ['ABC', 66], ['dddd', 15], ['Hello', 108] ] ) // => false
 // }
 
 /* Array.prototype.every is sweet */
+// function isWinningTicket(ticket){
+//   return ticket.every(function(arr) {
+//     return arr[0].includes(String.fromCharCode(arr[1]));
+//   });
+// }
+
+/* Arrow functions help make concise one-liners possible */
 function isWinningTicket(ticket){
-  return ticket.every(function(arr) {
-    return arr[0].includes(String.fromCharCode(arr[1]));
-  });
+  return ticket.every(arr => arr[0].includes(String.fromCharCode(arr[1])));
 }
 
 
