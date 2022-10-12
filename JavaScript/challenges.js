@@ -1220,12 +1220,25 @@ addChecker( [10, 15, 16, 22], 32 ) // => true
 addChecker( [10, 15, 16, 22], 19 ) // => false
 -----------------------------------------------------------------*/
 // Your solution for 29-addChecker here:
+// function addChecker(nums, total) {
+//   var result = false;
+//   for (i = 0; i < nums.length - 1; i++) {
+//     for (j = i + 1; j < nums.length; j++) {
+//       if (nums[i] + nums[j] === total) return true; 
+//     }
+//   }
+//   return result;
+// }
+
+/* efficent solution - leveraging the sorted array */
 function addChecker(nums, total) {
   var result = false;
-  for (i = 0; i < nums.length - 1; i++) {
-    for (j = i + 1; j < nums.length; j++) {
-      if (nums[i] + nums[j] === total) return true; 
-    }
+  var start = 0
+  var end = nums.length - 1; 
+  while (start < end) {
+    var sum = nums[start] + nums[end];
+    if (sum === total) return true;
+    sum < total ? start++ : end--;
   }
   return result;
 }
