@@ -1294,3 +1294,7 @@ function totalTaskTime(tasks, numThreads) {
   return time + (tasks.length ? Math.max(...tasks) : 0);
 }
 
+/* One-liner using different 'addition' approach */
+function totalTaskTime(tasks, numThreads) {
+  return tasks.length && Math.max(...tasks.reduce((b, t, i) => (b[b.indexOf(Math.min(...b))] += t) && b, tasks.splice(0, numThreads)));
+}
