@@ -31,3 +31,9 @@ We will cover the differences in their main elements:
 - For Loops and While Loops
 - Functions
 - Object-Oriented Programming
+
+## Can Python replace JavaScript?
+Python will not be able to replace JavaScript because: 
+
+(FRONT-END) JavaScript is browser-native, whereas Python is not. 
+(BACK-END) Neither JavaScript nor Python are web-native programming languages. As a result, they will work in tandem.
