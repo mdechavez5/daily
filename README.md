@@ -57,3 +57,5 @@ JavaScript is so widely used in web development because it is a versatile langua
 
 Differences between the applications of Python and JavaScript
 In short, developers use Python for a range of scientific applications. They use JavaScript for web development, user-facing functionality, and servers
+
+[Ref](https://www.freecodecamp.org/news/python-vs-javascript-what-are-the-key-differences-between-the-two-popular-programming-languages/)
