@@ -59,3 +59,13 @@ Differences between the applications of Python and JavaScript
 In short, developers use Python for a range of scientific applications. They use JavaScript for web development, user-facing functionality, and servers
 
 [Ref](https://www.freecodecamp.org/news/python-vs-javascript-what-are-the-key-differences-between-the-two-popular-programming-languages/)
+
+## Here are 5 reasons Python is a great programming language, but JavaScript is better.
+ 
+
+1. JavaScript is better for website development
+Hands down, JavaScript is undeniably better than Python for website development for one simple reason: JS runs in the browser while Python is a backend server-side language.
+
+While Python can be used in part to create a website, it can’t be used alone. Python must be used to respond to requests that return HTML, CSS, and JavaScript. Additionally, using Python to build a website is a complicated process. Frameworks exist to make the task easier – like Django and Flask – but even so, using Python isn’t optimal.
+
+JavaScript is the better choice for desktop and mobile websites. Between JQuery, Angular, and React, JavaScript provides virtually endless capabilities for web programming.
