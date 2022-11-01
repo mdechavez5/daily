@@ -69,3 +69,8 @@ Hands down, JavaScript is undeniably better than Python for website development 
 While Python can be used in part to create a website, it can’t be used alone. Python must be used to respond to requests that return HTML, CSS, and JavaScript. Additionally, using Python to build a website is a complicated process. Frameworks exist to make the task easier – like Django and Flask – but even so, using Python isn’t optimal.
 
 JavaScript is the better choice for desktop and mobile websites. Between JQuery, Angular, and React, JavaScript provides virtually endless capabilities for web programming.
+
+2. Experienced developers are more likely to know JavaScript
+When a business or individual hires a programmer for a project, having an experienced developer is the key to a successful project. The problem with Python developers is that you never know how much real-world experience they have. The same can be said of JavaScript developers, however, it’s easier to find experienced JS developers because it’s been a standard for decades.
+
+While Python was launched in 1989 – about six years before JavaScript – Python didn’t become popular until Google adopted it and invested in its further development. That means the majority of seasoned developers who got their start in the 1990s are likely to be experienced with JavaScript over Python.
