@@ -74,3 +74,10 @@ JavaScript is the better choice for desktop and mobile websites. Between JQuery,
 When a business or individual hires a programmer for a project, having an experienced developer is the key to a successful project. The problem with Python developers is that you never know how much real-world experience they have. The same can be said of JavaScript developers, however, it’s easier to find experienced JS developers because it’s been a standard for decades.
 
 While Python was launched in 1989 – about six years before JavaScript – Python didn’t become popular until Google adopted it and invested in its further development. That means the majority of seasoned developers who got their start in the 1990s are likely to be experienced with JavaScript over Python.
+
+3. JavaScript provides a direct path into the IT world
+There will always be die-hard Python fans who can make a good argument for learning Python. However, if you want to get into the tech world, JavaScript is the golden ticket.
+
+Since JavaScript is a necessary component of front-end website development, you’ll have the skills necessary to generate income either as a freelancer or on a team.
+
+Browsing around job listing sites in search of programming jobs reveals a significant preference for JavaScript programmers. While some businesses may not know what programming language is best for their particular project, if they’re working on a front-end website project, they’ll need at least some JavaScript development.
