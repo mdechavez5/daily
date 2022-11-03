@@ -81,3 +81,6 @@ There will always be die-hard Python fans who can make a good argument for learn
 Since JavaScript is a necessary component of front-end website development, you’ll have the skills necessary to generate income either as a freelancer or on a team.
 
 Browsing around job listing sites in search of programming jobs reveals a significant preference for JavaScript programmers. While some businesses may not know what programming language is best for their particular project, if they’re working on a front-end website project, they’ll need at least some JavaScript development.
+
+4. JavaScript is easy to learn
+Although many people say Python is easier to learn than JavaScript, that’s not true for people with a programming mindset. JS basics can be learned in just months, and with a year of dedication, a person can start earning decent money with their skills.
