@@ -84,3 +84,10 @@ Browsing around job listing sites in search of programming jobs reveals a signif
 
 4. JavaScript is easy to learn
 Although many people say Python is easier to learn than JavaScript, that’s not true for people with a programming mindset. JS basics can be learned in just months, and with a year of dedication, a person can start earning decent money with their skills.
+
+5. JavaScript is historically the most popular programming language
+JavaScript has been popular since its first release in 1995, and that’s not going to change any time soon. Even today, Brendan Eich, JavaScript’s key designer, says that every web developer needs to know JavaScript, Java, and Python.
+
+While Python is a good programming language to have under your belt, it’s not a standalone solution for web development. Python is a helpful addition to existing web programming languages, but can’t do much by itself.
+
+It could be considered a logical fallacy to say JavaScript is better because it’s been popular for a long time, but programming languages remain popular for good reason. That reason is functionality, reliability, and ease of use. JavaScript fulfills all of those requirements.
