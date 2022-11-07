@@ -91,3 +91,10 @@ JavaScript has been popular since its first release in 1995, and that’s not go
 While Python is a good programming language to have under your belt, it’s not a standalone solution for web development. Python is a helpful addition to existing web programming languages, but can’t do much by itself.
 
 It could be considered a logical fallacy to say JavaScript is better because it’s been popular for a long time, but programming languages remain popular for good reason. That reason is functionality, reliability, and ease of use. JavaScript fulfills all of those requirements.
+
+## Programming languages serve different purposes
+Each time a new programming language is created, the goal is to improve on features like efficiency, debugging and memory management. Some of the older, foundational programming languages are useful but have some hefty drawbacks compared to new languages.
+
+Regardless of whether you’re partial to JavaScript, Python, Ruby, or Rust, each serves a purpose. Some languages overlap in functionality while others are more robust and provide better debugging.
+
+As a general rule, it’s good to learn the programming languages that are in high demand if you want a thriving programming career. That will require learning languages that aren’t necessarily the best, but if those languages serve a client’s needs, that’s where you’ll find your income.
